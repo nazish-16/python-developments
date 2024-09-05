@@ -1,6 +1,7 @@
 import cv2
 
-image = cv2.imread("luffy.webp", cv2.IMREAD_UNCHANGED)
+image_file = input("Enter the image title: ")
+image = cv2.imread(image_file, cv2.IMREAD_UNCHANGED)
 
 scale_percent = int(input("Enter the value: "))
 newWidth = int(image.shape[1] * scale_percent / 100)
