@@ -22,6 +22,8 @@ elif operators == '*':
 elif operators == '/':
     result = num1 / num2
     print(round(result, 3))
-
+else:
+    print(f"{operators} is not valid")
+    
 if __name__ == '__main__':
     main()
