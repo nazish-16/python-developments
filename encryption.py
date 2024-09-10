@@ -15,4 +15,14 @@ for letter in text:
     encrypt += key[index] 
 
 print(f'original message: {text}')
+print(f"encrypted message: {encrypt}") 
+
+encrypt = input("Enter a message to encrypt: ")
+text = ""
+
+for letter in encrypt:
+    index = key.index(letter)
+    text += chars[index] 
+
 print(f"encrypted message: {encrypt}")
+print(f'original message: {text}')
